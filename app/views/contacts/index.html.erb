@@ -3,4 +3,6 @@
 <% @contacts.each do |contact| %>
 <h2><%= contact.name %></h2>
 <%= link_to "Person's Info", contact_path(contact) %>
+<%= link_to "Edit", edit_contact_path(contact) %>
+<%= link_to "Delete Person", contact, method: :delete %>
 <% end %>
